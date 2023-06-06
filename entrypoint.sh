@@ -124,6 +124,9 @@ if [ "$INPUT_CREATE_README" = true ] ; then
     echo ::endgroup::
 fi
 
+echo "Adding .nojekill file"
+touch .nojekyll
+
 # commit and push
 echo ::group::Push
 echo "git add ."
